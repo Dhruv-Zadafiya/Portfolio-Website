@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #555;
+}
+
+#about {
+    padding: 80px 10%;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-content h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-content h1::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #f2545b;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #222;
+    margin-top: 15px;
+}
+
+.role {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0;
+    max-width: 650px;
+}
+
+.about-content a {
+    color: #f2545b;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+.about-details {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.about-details p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: 2px solid #f2545b;
+    color: #f2545b;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f2545b;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 260px;
+    }
+
+    .about-content h1::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

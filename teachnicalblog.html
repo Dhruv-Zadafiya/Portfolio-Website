@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Blogs | Data Science</title>
+    <link rel="stylesheet" href="second.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="header">
+    <h1>Technical Blogs</h1>
+    <p>Data Science • Machine Learning • AI</p>
+</header>
+
+<section class="blog-container">
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="roadmap.jpg" alt="Data Science Blog" id="blogImage">
+        </div>
+
+        <div class="blog-content">
+            <span class="tag">Data Science</span>
+            <h2>Exploratory Data Analysis (EDA)</h2>
+
+            <p>Learn how to analyze datasets using statistics and visual techniques.</p>
+
+            <div class="more-content" id="moreContent">
+                <p>
+                    Exploratory Data Analysis focuses on understanding the structure,
+                    patterns, and anomalies in data before applying machine learning models.
+                </p>
+                <ul>
+                    <li>Data Cleaning & Preparation</li>
+                    <li>Univariate & Multivariate Analysis</li>
+                    <li>Visualization Techniques</li>
+                    <li>Outlier Detection</li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0)" class="read-btn" id="readMoreBtn">Read More →</a>
+        </div>
+    </div>
+</section>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<footer class="footer">
+    <p>© 2025 | Designed by Dhruv Zadafiya</p>
+</footer>
+
+<script>
+    const blogImage = document.getElementById("blogImage");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+    const readMoreBtn = document.getElementById("readMoreBtn");
+    const moreContent = document.getElementById("moreContent");
+
+    blogImage.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = blogImage.src;
+    });
+
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", e => {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    });
+
+    readMoreBtn.addEventListener("click", () => {
+        moreContent.classList.toggle("show");
+        readMoreBtn.textContent = moreContent.classList.contains("show")
+            ? "Read Less ←"
+            : "Read More →";
+    });
+</script>
+
+</body>
+</html>
