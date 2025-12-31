@@ -1,30 +1,22 @@
-Editorial by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+ 
 
+=> Data Science Portfolio Website
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
+This repository contains my personal data science portfolio website.
+It showcases projects focused on Python, data analytics, SQL databases, and machine learning.
+The portfolio highlights hands-on experience, real-world datasets, and end-to-end project workflows.
+Designed with a clean, responsive layout for easy navigation across devices.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+=> About This Project
 
-(* = not included)
+This is my personal data science portfolio website created to present my skills and projects.
+It includes work in data analysis, machine learning, and database management using Python and SQL.
+Each project demonstrates practical problem-solving and data-driven insights.
+The website is fully responsive and easy to navigate.
 
-AJ
-aj@lkn.io | @ajlkn
+=> Personal Data Science Portfolio
 
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+A portfolio website showcasing my journey in data science and analytics.
+Features projects in Python, data analytics, SQL, and machine learning techniques.
+Built to demonstrate hands-on experience with real-world data and models.
+Optimized for clarity, simplicity, and responsiveness
